@@ -7,8 +7,8 @@ import requests
 
 class testReq:
 	def test(self,url):
-		self.r = requests.get(url,verify=True)
-		print self.r.status_code
+		self.r = requests.options(url)
+		print self.r
 
 if __name__ == '__main__':
 	desc = 'host for the request'
